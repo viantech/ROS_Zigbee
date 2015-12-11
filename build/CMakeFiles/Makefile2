@@ -1000,7 +1000,7 @@ clean: serial-example/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 serial-example/CMakeFiles/serial_example_node.dir/all: serial/CMakeFiles/serial.dir/all
 	$(MAKE) -f serial-example/CMakeFiles/serial_example_node.dir/build.make serial-example/CMakeFiles/serial_example_node.dir/depend
 	$(MAKE) -f serial-example/CMakeFiles/serial_example_node.dir/build.make serial-example/CMakeFiles/serial_example_node.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/catkin_ws/build/CMakeFiles  9 10
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/catkin_ws/build/CMakeFiles  9
 	@echo "Built target serial_example_node"
 .PHONY : serial-example/CMakeFiles/serial_example_node.dir/all
 
@@ -1010,7 +1010,7 @@ all: serial-example/CMakeFiles/serial_example_node.dir/all
 
 # Build rule for subdir invocation for target.
 serial-example/CMakeFiles/serial_example_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/catkin_ws/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/catkin_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 serial-example/CMakeFiles/serial_example_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/catkin_ws/build/CMakeFiles 0
 .PHONY : serial-example/CMakeFiles/serial_example_node.dir/rule

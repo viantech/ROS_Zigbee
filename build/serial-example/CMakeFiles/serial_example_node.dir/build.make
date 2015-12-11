@@ -72,39 +72,14 @@ serial-example/CMakeFiles/serial_example_node.dir/src/serial_example_node.cpp.o.
 
 serial-example/CMakeFiles/serial_example_node.dir/src/serial_example_node.cpp.o.provides.build: serial-example/CMakeFiles/serial_example_node.dir/src/serial_example_node.cpp.o
 
-serial-example/CMakeFiles/serial_example_node.dir/src/uart.cpp.o: serial-example/CMakeFiles/serial_example_node.dir/flags.make
-serial-example/CMakeFiles/serial_example_node.dir/src/uart.cpp.o: /home/ubuntu/catkin_ws/src/serial-example/src/uart.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object serial-example/CMakeFiles/serial_example_node.dir/src/uart.cpp.o"
-	cd /home/ubuntu/catkin_ws/build/serial-example && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/serial_example_node.dir/src/uart.cpp.o -c /home/ubuntu/catkin_ws/src/serial-example/src/uart.cpp
-
-serial-example/CMakeFiles/serial_example_node.dir/src/uart.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/serial_example_node.dir/src/uart.cpp.i"
-	cd /home/ubuntu/catkin_ws/build/serial-example && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/catkin_ws/src/serial-example/src/uart.cpp > CMakeFiles/serial_example_node.dir/src/uart.cpp.i
-
-serial-example/CMakeFiles/serial_example_node.dir/src/uart.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/serial_example_node.dir/src/uart.cpp.s"
-	cd /home/ubuntu/catkin_ws/build/serial-example && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/catkin_ws/src/serial-example/src/uart.cpp -o CMakeFiles/serial_example_node.dir/src/uart.cpp.s
-
-serial-example/CMakeFiles/serial_example_node.dir/src/uart.cpp.o.requires:
-.PHONY : serial-example/CMakeFiles/serial_example_node.dir/src/uart.cpp.o.requires
-
-serial-example/CMakeFiles/serial_example_node.dir/src/uart.cpp.o.provides: serial-example/CMakeFiles/serial_example_node.dir/src/uart.cpp.o.requires
-	$(MAKE) -f serial-example/CMakeFiles/serial_example_node.dir/build.make serial-example/CMakeFiles/serial_example_node.dir/src/uart.cpp.o.provides.build
-.PHONY : serial-example/CMakeFiles/serial_example_node.dir/src/uart.cpp.o.provides
-
-serial-example/CMakeFiles/serial_example_node.dir/src/uart.cpp.o.provides.build: serial-example/CMakeFiles/serial_example_node.dir/src/uart.cpp.o
-
 # Object files for target serial_example_node
 serial_example_node_OBJECTS = \
-"CMakeFiles/serial_example_node.dir/src/serial_example_node.cpp.o" \
-"CMakeFiles/serial_example_node.dir/src/uart.cpp.o"
+"CMakeFiles/serial_example_node.dir/src/serial_example_node.cpp.o"
 
 # External object files for target serial_example_node
 serial_example_node_EXTERNAL_OBJECTS =
 
 /home/ubuntu/catkin_ws/devel/lib/serial_example/serial_example_node: serial-example/CMakeFiles/serial_example_node.dir/src/serial_example_node.cpp.o
-/home/ubuntu/catkin_ws/devel/lib/serial_example/serial_example_node: serial-example/CMakeFiles/serial_example_node.dir/src/uart.cpp.o
 /home/ubuntu/catkin_ws/devel/lib/serial_example/serial_example_node: serial-example/CMakeFiles/serial_example_node.dir/build.make
 /home/ubuntu/catkin_ws/devel/lib/serial_example/serial_example_node: /opt/ros/indigo/lib/libroscpp.so
 /home/ubuntu/catkin_ws/devel/lib/serial_example/serial_example_node: /usr/lib/arm-linux-gnueabihf/libboost_signals.so
@@ -133,7 +108,6 @@ serial-example/CMakeFiles/serial_example_node.dir/build: /home/ubuntu/catkin_ws/
 .PHONY : serial-example/CMakeFiles/serial_example_node.dir/build
 
 serial-example/CMakeFiles/serial_example_node.dir/requires: serial-example/CMakeFiles/serial_example_node.dir/src/serial_example_node.cpp.o.requires
-serial-example/CMakeFiles/serial_example_node.dir/requires: serial-example/CMakeFiles/serial_example_node.dir/src/uart.cpp.o.requires
 .PHONY : serial-example/CMakeFiles/serial_example_node.dir/requires
 
 serial-example/CMakeFiles/serial_example_node.dir/clean:

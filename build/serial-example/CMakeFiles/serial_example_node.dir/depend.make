@@ -67,6 +67,3 @@ serial-example/CMakeFiles/serial_example_node.dir/src/serial_example_node.cpp.o:
 serial-example/CMakeFiles/serial_example_node.dir/src/serial_example_node.cpp.o: /opt/ros/indigo/include/std_msgs/String.h
 serial-example/CMakeFiles/serial_example_node.dir/src/serial_example_node.cpp.o: /opt/ros/indigo/include/std_msgs/UInt8MultiArray.h
 
-serial-example/CMakeFiles/serial_example_node.dir/src/uart.cpp.o: /home/ubuntu/catkin_ws/src/serial-example/include/uart.h
-serial-example/CMakeFiles/serial_example_node.dir/src/uart.cpp.o: /home/ubuntu/catkin_ws/src/serial-example/src/uart.cpp
-

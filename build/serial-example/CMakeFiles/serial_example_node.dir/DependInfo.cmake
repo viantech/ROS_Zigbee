@@ -5,7 +5,6 @@ SET(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/ubuntu/catkin_ws/src/serial-example/src/serial_example_node.cpp" "/home/ubuntu/catkin_ws/build/serial-example/CMakeFiles/serial_example_node.dir/src/serial_example_node.cpp.o"
-  "/home/ubuntu/catkin_ws/src/serial-example/src/uart.cpp" "/home/ubuntu/catkin_ws/build/serial-example/CMakeFiles/serial_example_node.dir/src/uart.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

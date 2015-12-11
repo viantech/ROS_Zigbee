@@ -313,30 +313,6 @@ src/serial_example_node.cpp.s:
 	cd /home/ubuntu/catkin_ws/build && $(MAKE) -f serial-example/CMakeFiles/serial_example_node.dir/build.make serial-example/CMakeFiles/serial_example_node.dir/src/serial_example_node.cpp.s
 .PHONY : src/serial_example_node.cpp.s
 
-src/uart.o: src/uart.cpp.o
-.PHONY : src/uart.o
-
-# target to build an object file
-src/uart.cpp.o:
-	cd /home/ubuntu/catkin_ws/build && $(MAKE) -f serial-example/CMakeFiles/serial_example_node.dir/build.make serial-example/CMakeFiles/serial_example_node.dir/src/uart.cpp.o
-.PHONY : src/uart.cpp.o
-
-src/uart.i: src/uart.cpp.i
-.PHONY : src/uart.i
-
-# target to preprocess a source file
-src/uart.cpp.i:
-	cd /home/ubuntu/catkin_ws/build && $(MAKE) -f serial-example/CMakeFiles/serial_example_node.dir/build.make serial-example/CMakeFiles/serial_example_node.dir/src/uart.cpp.i
-.PHONY : src/uart.cpp.i
-
-src/uart.s: src/uart.cpp.s
-.PHONY : src/uart.s
-
-# target to generate assembly for a file
-src/uart.cpp.s:
-	cd /home/ubuntu/catkin_ws/build && $(MAKE) -f serial-example/CMakeFiles/serial_example_node.dir/build.make serial-example/CMakeFiles/serial_example_node.dir/src/uart.cpp.s
-.PHONY : src/uart.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -363,9 +339,6 @@ help:
 	@echo "... src/serial_example_node.o"
 	@echo "... src/serial_example_node.i"
 	@echo "... src/serial_example_node.s"
-	@echo "... src/uart.o"
-	@echo "... src/uart.i"
-	@echo "... src/uart.s"
 .PHONY : help
 
 
