@@ -14,6 +14,7 @@ catkin_package(
 )
 
 include_directories(
+  include
   ${catkin_INCLUDE_DIRS}
 )
 
@@ -22,4 +23,7 @@ add_executable(serial_example_node src/serial_example_node.cpp)
 target_link_libraries(serial_example_node
   ${catkin_LIBRARIES}
 )
+
+## set flags for compiler
+set(CMAKE_CXX_FLAGS "-fPIC -std=c++0x -O0 -g3 -Wall -fmessage-length=0 -pthread")
 
