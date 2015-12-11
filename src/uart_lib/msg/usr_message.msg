@@ -1,1 +1,0 @@
-std_msgs/UInt8MultiArray rfid_mgs
