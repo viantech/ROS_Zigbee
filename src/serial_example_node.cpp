@@ -35,11 +35,11 @@
 #include <std_msgs/Empty.h>
 #include "uart.h"
 
-//int fd;
 using namespace std;
 string ACK_CCmd;
 //const char *send_sink = "AT+SCAST:";
 serial::Serial ser;
+ConfigFile cf("/home/ubuntu/catkin_ws/config.txt");
 void Cmd_Handler(string command)
 {
 	int id = command[0] - '0';
@@ -92,20 +92,22 @@ void Cmd_Handler(string command)
 
 void write_callback(const std_msgs::UInt8MultiArray::ConstPtr& msg){
 	std::stringstream ssend;
+	std::string str_data, number_ID, posit;
 	char sdata[2*14 + 1];
    	for (unsigned int i = 0; i < 14; i++)
    		sprintf(&sdata[i*2], "%02X", msg->data[i]);
    	sdata[2*14] = '\0';
-//   	ssend << sdata;
-	ROS_INFO("Write to serial on topic: %s", sdata);
-//	std::cout << "Write to serial on topic: " << ssend.str() << std::endl;
-	ssend << "AT+SCAST:" << sdata << "\r";
+	str_data = sdata;
+	ROS_INFO_STREAM("Write to serial on topic: " << str_data);
+	number_ID = cf.Value("No_ID",str_data, "ID not exist");
+	posit = cf.Value("Position",number_ID, "Position not defined");
+	ssend << "AT+SCAST:" << posit << "\r";
 	ser.write(ssend.str());
 	ssend.str("");
     }
 int main (int argc, char** argv){
-	stringstream ACK_send;
-	ros::init(argc, argv, "serial_example_node");
+    stringstream ACK_send;
+    ros::init(argc, argv, "serial_example_node");
     ros::NodeHandle nh;
 
     ros::Subscriber write_sub = nh.subscribe("/was_rfid/movement/rfid", 1000, write_callback);
@@ -130,7 +132,14 @@ int main (int argc, char** argv){
     }else{
         return -1;
     }
+    /*std::string ID, ID_number, pos;
+	std::cout << "ID: ";
+	std::cin >> ID;
+	ID_number  = cf.Value("No_ID",ID, "ID not exist");
+	pos = cf.Value("Position",ID_number, "ID not exist");
 
+	std::cout << ID_number   << std::endl;
+	std::cout << pos << std::endl;*/
     ros::Rate loop_rate(1);
     while(ros::ok()){
 
